@@ -12,17 +12,25 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    echo "Selamat Datang";
+Route::get('/home', function(){
+    return view('home');
 });
+// Route::get('/', function () {
+//     echo "Selamat Datang";
+// });
 
-Route::get('/about', function () {
-    echo "  NIM : 2041720071
-            NAMA : Aida Millati Mardiana
-            Kelas : TI 2H";
-});
+// Route::get('/about', function () {
+//     echo "  NIM : 2041720071
+//             NAMA : Aida Millati Mardiana
+//             Kelas : TI 2H";
+// });
 
-Route::get('/articles/{id}', function ($id) {
-    return "Halaman Artikel dengan ID" .$id;
-});
+// Route::get('/articles/{id}', function ($id) {
+//     return "Halaman Artikel dengan ID" .$id;
+// });
+
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+
+// Route::get('/about', [App\Http\Controllers\AboutController::class, 'about']);
+
+// Route::get('/article{id}', [App\Http\Controllers\ArticleController::class, 'article']);
