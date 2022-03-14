@@ -1,7 +1,7 @@
 @extends('masterLayout')
 
 @section('content')
-
+    
 <!--============ Slider ============-->
 
 
@@ -175,4 +175,3 @@
     </div> 
     <!--contactus class-->
 </div> <!-- end of contact wrapper-->
-

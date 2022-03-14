@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,25 +14,49 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', function(){
+
+//PRAKTIKUM 3
+
+//Route::get('/Home', function () {
+//  return view('Home');
+//});
+
+
+//nomer 1
+//Route::get('/', function () {
+ //   echo "Selamat Datang";
+//});
+
+//nomer 2
+//Route::get('/about', function () {
+ //   echo "2041720090 <br>";
+ //   echo " Siswi Diah Priadhita Dewi <br>";
+ //   echo " TI 2H ";
+
+//});
+
+//nomer 3
+//Route::get('/articles/{id}', function ($id) {
+//    echo "Ini adalah halaman artikel dengan ID: ".$id ;
+
+//});
+
+//PRAKTIKUM 2
+//Route::get('/', [HomeController::class,'index']);
+
+//Route::get('/about', [AboutController::class,'about']);
+
+//Route::get('/articles/{id}', [ArticleController::class,'articles']);
+
+//PRAKTIKUM 3
+// Route::get('/', [UtamaController::class,'index']);
+// Route::get('/about', [AboutUsController::class,'about']);
+// Route::get('/news/{id}', [NewsController::class,'news']);
+//Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::get('/Home', [PostController::class, 'index']);
+Route::get('/home', function () {
     return view('home');
 });
-// Route::get('/', function () {
-//     echo "Selamat Datang";
-// });
-
-// Route::get('/about', function () {
-//     echo "  NIM : 2041720071
-//             NAMA : Aida Millati Mardiana
-//             Kelas : TI 2H";
-// });
-
-// Route::get('/articles/{id}', function ($id) {
-//     return "Halaman Artikel dengan ID" .$id;
-// });
-
-// Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
-
-// Route::get('/about', [App\Http\Controllers\AboutController::class, 'about']);
-
-// Route::get('/article{id}', [App\Http\Controllers\ArticleController::class, 'article']);
