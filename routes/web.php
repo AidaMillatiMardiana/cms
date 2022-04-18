@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+// use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 
 
 
@@ -57,9 +58,10 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Route::get('/Home', [PostController::class, 'index']);
-Route::get('/home', function () {
-    return view('home');
-});
-Auth::routes();
+// Route::get('/home', function () {
+//     return view('home');
+// });
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('articles', ArticleController::class);
